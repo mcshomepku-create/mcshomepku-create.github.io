@@ -1,5 +1,121 @@
-<html>
-  <body>
-    <h1> TEST </h1>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Profile</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f2f5;
+      color: #333;
+    }
+
+    .profile-container {
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .profile-image {
+      flex: 1 1 300px;
+      background-position: center;
+      background-size: cover;
+      min-height: 300px;
+    }
+
+    .profile-details {
+      flex: 1 1 600px;
+      padding: 40px;
+    }
+
+    .profile-details h1 {
+      margin-top: 0;
+      font-size: 2.5rem;
+      color: #222;
+    }
+
+    .profile-details p {
+      line-height: 1.6;
+      margin: 15px 0;
+      font-size: 1.1rem;
+    }
+
+    .profile-details .info-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .profile-details .info-list li {
+      margin: 8px 0;
+      font-size: 1rem;
+    }
+
+    .profile-details .info-list li span.label {
+      font-weight: bold;
+      display: inline-block;
+      width: 120px;
+    }
+
+    .social-links {
+      margin-top: 20px;
+    }
+
+    .social-links a {
+      text-decoration: none;
+      color: #0066cc;
+      margin-right: 15px;
+      font-size: 1.2rem;
+    }
+
+    .social-links a:hover {
+      color: #004999;
+    }
+
+    @media (max-width: 768px) {
+      .profile-container {
+        flex-direction: column;
+      }
+      .profile-image {
+        min-height: 250px;
+      }
+      .profile-details {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-container">
+    <!-- Profile Image: you can replace the URL with your own -->
+    <div class="profile-image" style="background-image: url('https://images.unsplash.com/photo-1595152772835-219674b2a8a6?auto=format&fit=crop&w=800&q=80');">
+    </div>
+    <div class="profile-details">
+      <h1>John Doe</h1>
+      <p>Hello! I’m John, a passionate software developer with a love for creating web applications that are both functional and beautiful. I enjoy problem-solving, learning new technologies, and collaborating on meaningful projects.</p>
+
+      <ul class="info-list">
+        <li><span class="label">Location:</span> Bogor, West Java, Indonesia</li>
+        <li><span class="label">Profession:</span> Full-Stack Developer</li>
+        <li><span class="label">Languages:</span> JavaScript, Python, PHP</li>
+        <li><span class="label">Interests:</span> UI/UX design, Open source, Travelling</li>
+      </ul>
+
+      <div class="social-links">
+        <a href="#" target="_blank">GitHub</a>
+        <a href="#" target="_blank">LinkedIn</a>
+        <a href="#" target="_blank">Twitter</a>
+      </div>
+    </div>
+  </div>
+
+</body>
 </html>
